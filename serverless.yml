@@ -14,9 +14,9 @@ functions:
           method: get
 
 plugins:
+  - serverless-plugin-typescript
   - serverless-offline
   - serverless-localstack
-
 custom:
   localstack:
     stages:
