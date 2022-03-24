@@ -8,7 +8,9 @@ First start local stack with the necessary services already configured:
 ``` bash
 docker compose up
 ```
-Then, perform the deploy to localstack:
+By that, the service will be available on http://localhost:3000
+
+If you want to simulate how this deploy will run to aws, perform the following deploy command to LocalStack:
 ```bash
  serverless deploy --stage local
 ```
