@@ -1,13 +1,15 @@
-FROM lambci/lambda:build-nodejs12.x
+FROM node:14-alpine
 
-RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash - && yum install -y nodejs
+RUN npm install -g --silent \
+    nodemon \
+    serverless
 
 WORKDIR /src/
 
-copy package.json package-lock.json /src/
+COPY package.json package-lock.json /src/
 
-RUN npm ci --silent
+RUN npm install --silent
 
-copy . .
+COPY . .
 
 CMD npm start
