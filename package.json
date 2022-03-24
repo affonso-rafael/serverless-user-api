@@ -9,6 +9,9 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
     "nodemon": "^2.0.15",
     "serverless-localstack": "^0.4.35",
     "serverless-offline": "^8.5.0",
