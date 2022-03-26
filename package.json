@@ -9,6 +9,9 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "dependencies": {
+    "aws-sdk": "^2.1100.0"
+  },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.93",
     "@types/jest": "^27.4.1",
